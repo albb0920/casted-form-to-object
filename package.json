@@ -1,0 +1,22 @@
+{
+  "name": "casted-form-to-object",
+  "version": "1.0.0",
+  "description": "Generate a object from a form, with numbers and boolean casting support",
+  "main": "dist/casted-form-to-object.js",
+  "module": "dist/casted-form-to-object.mjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albb0920/casted-form-to-object.git"
+  },
+  "author": "Albert Song",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "coffeescript": "^2.7.0"
+  },
+  "scripts": {
+    "build": "coffee -o dist/casted-form-to-object.mjs index.coffee && babel --presets=@babel/preset-env -o dist/casted-form-to-object.js dist/casted-form-to-object.mjs"
+  }
+}
